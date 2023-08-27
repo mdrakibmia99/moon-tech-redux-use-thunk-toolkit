@@ -1,7 +1,10 @@
 import React from "react";
 import { BiListPlus } from "react-icons/bi";
+import { useDispatch } from "react-redux";
 
 const ProductCard = ({ product }) => {
+  // initilize dispatch funciton
+  const dispatch=useDispatch();
   return (
     <div
       className='shadow-lg rounded-3xl border  p-3 flex flex-col text-indigo-900'
